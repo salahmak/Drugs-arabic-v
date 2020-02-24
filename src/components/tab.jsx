@@ -12,17 +12,7 @@ function Tab() {
         <div className="tab-rtl">
             <Tabs id="controlled-tab-example" activeKey={key} onSelect={k => setKey(k)}>
                 <Tab eventKey="home" title="الرئيسية">
-                    <div className="tab-wrapper1 tab-ltr" >
-                        {Pictures.map((e, i) => {
-                            return (
-                                <Slider
-                                    before={Pictures[i].image.before}
-                                    after={Pictures[i].image.after}
-                                    key={Pictures[i]}
-                                />
-                            )
-                        })}
-                    </div>
+
 
                 </Tab>
                 <Tab eventKey="cards" title="المخدرات الأكثر شيوعا">
@@ -35,7 +25,17 @@ function Tab() {
                     d
                 </Tab>
                 <Tab eventKey="bfraftr" title="قبل / بعد الادمان">
-
+                    <div className="tab-wrapper1 tab-ltr" >
+                        {Pictures.map((e, i) => {
+                            return (
+                                <Slider
+                                    before={Pictures[i].image.before}
+                                    after={Pictures[i].image.after}
+                                    key={Pictures[i]}
+                                />
+                            )
+                        })}
+                    </div>
                 </Tab>
             </Tabs>
         </div>
