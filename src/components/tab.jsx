@@ -4,6 +4,7 @@ import CardsList from "./CardsList";
 //import CarouselPage from './carousel.jsx'
 import Slider from './imageSlider.jsx'
 import Pictures from './picData.js'
+import Jumbotron from './jumbotron.jsx'
 
 function Tab() {
     const [key, setKey] = React.useState('home');
@@ -12,7 +13,7 @@ function Tab() {
         <div className="tab-rtl">
             <Tabs id="controlled-tab-example" activeKey={key} onSelect={k => setKey(k)}>
                 <Tab eventKey="home" title="الرئيسية">
-
+                    <Jumbotron />
 
                 </Tab>
                 <Tab eventKey="cards" title="المخدرات الأكثر شيوعا">
@@ -31,7 +32,7 @@ function Tab() {
                                 <Slider
                                     before={Pictures[i].image.before}
                                     after={Pictures[i].image.after}
-                                    key={Pictures[i]}
+                                    key={i}
                                 />
                             )
                         })}
