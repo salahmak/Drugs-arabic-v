@@ -1,64 +1,52 @@
 import React from "react";
-import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from
-    "mdbreact";
+import { Carousel } from 'react-bootstrap';
+import img1 from './before.jpg';
+import img2 from './after.jpg'
 
-const CarouselPage = () => {
-    return (
-        <MDBContainer>
-            <MDBCarousel
-                activeItem={1}
-                length={3}
-                showControls={true}
-                showIndicators={true}
-                className="z-depth-1"
-            >
-                <MDBCarouselInner>
-                    <MDBCarouselItem itemId="1">
-                        <MDBView>
-                            <img
-                                className="d-block w-100"
-                                src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
-                                alt="First slide"
-                            />
-                            <MDBMask overlay="black-light" />
-                        </MDBView>
-                        <MDBCarouselCaption>
-                            <h3 className="h3-responsive">Light mask</h3>
-                            <p>First text</p>
-                        </MDBCarouselCaption>
-                    </MDBCarouselItem>
-                    <MDBCarouselItem itemId="2">
-                        <MDBView>
-                            <img
-                                className="d-block w-100"
-                                src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
-                                alt="Second slide"
-                            />
-                            <MDBMask overlay="black-strong" />
-                        </MDBView>
-                        <MDBCarouselCaption>
-                            <h3 className="h3-responsive">Strong mask</h3>
-                            <p>Second text</p>
-                        </MDBCarouselCaption>
-                    </MDBCarouselItem>
-                    <MDBCarouselItem itemId="3">
-                        <MDBView>
-                            <img
-                                className="d-block w-100"
-                                src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
-                                alt="Third slide"
-                            />
-                            <MDBMask overlay="black-slight" />
-                        </MDBView>
-                        <MDBCarouselCaption>
-                            <h3 className="h3-responsive">Slight Mast</h3>
-                            <p>Third text</p>
-                        </MDBCarouselCaption>
-                    </MDBCarouselItem>
-                </MDBCarouselInner>
-            </MDBCarousel>
-        </MDBContainer>
-    );
+
+class CarouselEl extends React.Component {
+    render() {
+        return (
+            <Carousel>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src={img1}
+                        alt="First slide"
+                    />
+                    <Carousel.Caption>
+                        <h3>First slide label</h3>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src={img2}
+                        alt="Third slide"
+                    />
+
+                    <Carousel.Caption>
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src={img1}
+                        alt="Third slide"
+                    />
+
+                    <Carousel.Caption>
+                        <h3>Third slide label</h3>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            </Carousel>
+        );
+    }
 }
 
-export default CarouselPage;
+export default CarouselEl;
+

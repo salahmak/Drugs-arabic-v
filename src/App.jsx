@@ -15,11 +15,14 @@ class App extends Component {
 
 
     return (
-      <React.Fragment>
-        <Header searchChange={this.onSearchChange} />
-        <Tab />
+      <div className="d-flex flex-column align-content-between">
+        <div>
+          <Header searchChange={this.onSearchChange} />
+          <Tab />
+        </div>
+
         <FooterEl />
-      </React.Fragment>
+      </div>
 
     );
   }
