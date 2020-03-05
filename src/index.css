@@ -1,18 +1,13 @@
-html,
-body {
-  height: 100vh;
-}
-
-#root {
-  height: 100vh;
-}
-
 .tab-rtl {
   direction: rtl;
 }
 
 .tab-ltr {
   direction: ltr;
+}
+
+.tc {
+  text-align: center;
 }
 
 .rightoleftsh {

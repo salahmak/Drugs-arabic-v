@@ -15,14 +15,14 @@ class App extends Component {
 
 
     return (
-      <div className="d-flex flex-column align-content-between">
-        <div>
-          <Header searchChange={this.onSearchChange} />
-          <Tab />
-        </div>
+      <>
+
+        <Header searchChange={this.onSearchChange} />
+        <Tab />
+
 
         <FooterEl />
-      </div>
+      </>
 
     );
   }

@@ -1,6 +1,7 @@
 import React from 'react';
 import Tabs from 'react-bootstrap/Tabs';
 import CardsList from "./CardsList";
+import CardsList2 from "./CardsList2";
 //import CarouselPage from './carousel.jsx'
 import Slider from './imageSlider.jsx'
 import Pictures from './picData.js'
@@ -14,21 +15,21 @@ function Tab() {
         <div className="tab-rtl">
             <Tabs id="controlled-tab-example" activeKey={key} onSelect={k => setKey(k)}>
                 <Tab eventKey="home" title="الرئيسية">
-                    <div className="p-2" >
+                    <div className="p-2">
                         <Jumbotron />
-                        <CarouselEl />
+
+                        <div className="tab-ltr">
+                            <CarouselEl />
+                        </div>
+
                     </div>
 
 
                 </Tab>
-                <Tab eventKey="cards" title="المخدرات الأكثر شيوعا">
+                <Tab eventKey="stories" title="قصص إدمان">
                     <div className="tab-wrapper">
-                        <CardsList />
+                        <CardsList2 />
                     </div>
-
-                </Tab>
-                <Tab eventKey="contact" title="أحصل على المساعدة">
-                    d
                 </Tab>
                 <Tab eventKey="bfraftr" title="قبل / بعد الادمان">
                     <div className="tab-wrapper1 tab-ltr" >
@@ -43,6 +44,17 @@ function Tab() {
                         })}
                     </div>
                 </Tab>
+                <Tab eventKey="cards" title="المخدرات الأكثر شيوعا">
+                    <div className="tab-wrapper">
+                        <CardsList />
+                    </div>
+
+                </Tab>
+                <Tab eventKey="contact" title="أحصل على المساعدة">
+                    <div className="tab-wrapper"></div>
+                </Tab>
+
+
             </Tabs>
         </div>
 

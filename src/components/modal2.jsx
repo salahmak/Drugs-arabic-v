@@ -4,7 +4,7 @@ import { Modal, Button } from 'react-bootstrap';
 
 
 
-function ModalEl(props) {
+function ModalEl2(props) {
     const [show, setShow] = React.useState(false);
     return (
         <>
@@ -26,7 +26,7 @@ function ModalEl(props) {
                     <Modal.Header closeButton>
 
                         <Modal.Title id="example-custom-modal-styling-title">
-                            {props.title}
+                            {props.name}
                         </Modal.Title>
 
 
@@ -34,17 +34,8 @@ function ModalEl(props) {
                 </div>
                 <Modal.Body>
                     <div className="rightoleftsh">
-                        <div>
-                            <h3>ماهو {props.title} ؟</h3>
-                            <p>{props.def}</p>
-                        </div>
-                        <div>
-                            <h3>كيف تتم صناعته ؟</h3>
-                            <p>{props.made}</p>
-                        </div>
-                        <div>
-                            <h3>ماهي آثاره ؟</h3>
-                            <p>{props.effects}</p>
+                        <div style={{ fontSize: '17px' }}>
+                            {props.story}
                         </div>
                     </div>
 
@@ -58,4 +49,4 @@ function ModalEl(props) {
     );
 }
 
-export default ModalEl;
+export default ModalEl2;
