@@ -1,7 +1,11 @@
 import React, { Component } from "react";
-import Header from "./components/Header.jsx";
 import Tab from './components/tab.jsx';
 import FooterEl from './components/footer.jsx'
+import Particles from 'react-particles-js';
+import params from './components/particles/params.js';
+
+
+const particlesParams = params;
 
 
 class App extends Component {
@@ -16,12 +20,15 @@ class App extends Component {
 
     return (
       <>
-
-        <Header searchChange={this.onSearchChange} />
-        <Tab />
-
+        <div className="content-page-w">
+          <Particles className='particles' params={particlesParams} />
+          <Tab />
+        </div>
 
         <FooterEl />
+
+
+
       </>
 
     );

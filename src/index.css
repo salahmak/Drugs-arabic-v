@@ -1,3 +1,25 @@
+body {
+  background: linear-gradient(45deg, #4286f4, #373b44) no-repeat center center fixed;
+  background-size: cover;
+  overflow-y: auto;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-page-w {
+  flex: 1;
+}
+
+.nav-tabs {
+  background-color: white;
+}
+
 .tab-rtl {
   direction: rtl;
 }
@@ -40,4 +62,21 @@
   width: 350px;
 
   margin-bottom: 15px;
+}
+
+.particles {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.jumbotron {
+  opacity: 0.9;
+}
+
+.card {
+  opacity: 0.88;
 }

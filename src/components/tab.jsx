@@ -2,7 +2,6 @@ import React from 'react';
 import Tabs from 'react-bootstrap/Tabs';
 import CardsList from "./CardsList";
 import CardsList2 from "./CardsList2";
-//import CarouselPage from './carousel.jsx'
 import Slider from './imageSlider.jsx'
 import Pictures from './picData.js'
 import Jumbotron from './jumbotron.jsx';
@@ -16,7 +15,7 @@ function Tab() {
             <Tabs id="controlled-tab-example" activeKey={key} onSelect={k => setKey(k)}>
                 <Tab eventKey="home" title="الرئيسية">
                     <div className="p-2">
-                        <Jumbotron />
+                        <Jumbotron className="jumbotron-op" />
 
                         <div className="tab-ltr">
                             <CarouselEl />
@@ -50,8 +49,9 @@ function Tab() {
                     </div>
 
                 </Tab>
-                <Tab eventKey="contact" title="أحصل على المساعدة">
+                <Tab className="tab-height" eventKey="contact" title="أحصل على المساعدة">
                     <div className="tab-wrapper"></div>
+
                 </Tab>
 
 
