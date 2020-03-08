@@ -36,15 +36,15 @@ function ModalEl(props) {
                     <div className="rightoleftsh">
                         <div>
                             <h3>ماهو {props.title} ؟</h3>
-                            <p>{props.def}</p>
+                            <div>{props.def}</div>
                         </div>
                         <div>
                             <h3>كيف تتم صناعته ؟</h3>
-                            <p>{props.made}</p>
+                            <div>{props.made}</div>
                         </div>
                         <div>
                             <h3>ماهي آثاره ؟</h3>
-                            <p>{props.effects}</p>
+                            <div>{props.effects}</div>
                         </div>
                     </div>
 

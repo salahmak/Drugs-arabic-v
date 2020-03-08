@@ -10,7 +10,7 @@ class Card extends Component {
                     <img src={this.props.img} className="card-img-top" alt="" />
                     <div className="card-body">
                         <h5 className="card-title">{this.props.title}</h5>
-                        <p className="card-text">{this.props.desc}</p>
+                        <div className="card-text">{this.props.desc}</div>
                         <ModalEl
                             title={this.props.title}
                             content={this.props.content}

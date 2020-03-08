@@ -4,5 +4,5 @@ import './index.css';
 import App from './App.jsx';
 import './components/bootstrap.min.css';
 
-ReactDOM.render(<App />, document.querySelector('body'));
+ReactDOM.render(<App />, document.getElementById('root'));
 

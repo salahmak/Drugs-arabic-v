@@ -7,9 +7,7 @@ let params = {
         },
         "line_linked": {
             "enable": false,
-            "opacity": 1,
-            "width": 0.5,
-
+            "opacity": 1
         },
         "move": {
             "out_mode": "out",
@@ -17,7 +15,9 @@ let params = {
         },
         "shape": {
             "type": [
-                "images"
+                "images",
+                "circle",
+
             ],
             "images": [
                 {
@@ -63,7 +63,7 @@ let params = {
         "opacity": {
             "anim": {
                 "enable": true,
-                "speed": 1,
+                "speed": 0.1,
                 "opacity_min": 0.05
             }
         }

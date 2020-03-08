@@ -1,14 +1,13 @@
 body {
-  background: linear-gradient(45deg, #4286f4, #373b44) no-repeat center center fixed;
+  background: linear-gradient(45deg, #4286f4, #373b44) no-repeat center center
+    fixed;
   background-size: cover;
   overflow-y: auto;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
 }
 
 #root {
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
 }
 
@@ -60,8 +59,20 @@ body {
 
 .slider-style {
   width: 350px;
+  margin: 15px;
+}
+.slider-style > div > img {
+  max-height: 390px;
+}
 
-  margin-bottom: 15px;
+.slider-style > div > div:first-of-type {
+  max-height: 390px;
+}
+
+.sliders-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .particles {

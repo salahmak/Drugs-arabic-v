@@ -32,15 +32,22 @@ function Tab() {
                 </Tab>
                 <Tab eventKey="bfraftr" title="قبل / بعد الادمان">
                     <div className="tab-wrapper1 tab-ltr" >
-                        {Pictures.map((e, i) => {
-                            return (
-                                <Slider
-                                    before={Pictures[i].image.before}
-                                    after={Pictures[i].image.after}
-                                    key={i}
-                                />
-                            )
-                        })}
+
+                        <div className="sliders-wrapper">
+                            {Pictures.map((e, i) => {
+                                return (
+
+                                    <Slider
+                                        before={Pictures[i].image.before}
+                                        after={Pictures[i].image.after}
+                                        key={i}
+                                    />
+
+
+                                )
+                            })}
+                        </div>
+
                     </div>
                 </Tab>
                 <Tab eventKey="cards" title="المخدرات الأكثر شيوعا">

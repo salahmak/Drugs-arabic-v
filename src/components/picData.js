@@ -7,6 +7,15 @@ import imga1 from './pics/after1.png'
 import imgb2 from './pics/before2.png'
 import imga2 from './pics/after2.png'
 
+/* import imgb3 from './pics/before3.png'
+import imga3 from './pics/after3.png'
+
+import imgb4 from './pics/before4.png'
+import imga4 from './pics/after4.png'
+
+import imgb5 from './pics/before5.png'
+import imga5 from './pics/after5.png' */
+
 const Pictures = [
     {
         image: {
@@ -25,7 +34,25 @@ const Pictures = [
             before: imgb2,
             after: imga2
         }
-    }
+    },
+    /*     {
+            image: {
+                before: imgb3,
+                after: imga3
+            }
+        },
+        {
+            image: {
+                before: imgb4,
+                after: imga4
+            }
+        },
+        {
+            image: {
+                before: imgb5,
+                after: imga5
+            }
+        } */
 
 ]
 
